@@ -26,7 +26,7 @@ public class PetController {
 	PetService petService;
 
 	// Listar mascotas
-	@GetMapping(value = "/listPet") // Para listar hacemos un Get
+	@GetMapping(value = "/listPet") // Para listar hacemos un Get prueba
 	public ResponseEntity<List<Pet>> listPet() {
 		try {
 			List<Pet> listPet = petService.listPet();
