@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "9f5429d7-4acf-42a3-b728-d540c3675b93",
+		"name": "veterinario",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15484801"
+	},
+	"item": [
+		{
+			"name": "list pets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Pet/listPet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Pet",
+						"listPet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create pet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"isabel\",\r\n    \"age\":44\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Pet/createPet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Pet",
+						"createPet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update pet",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\":\"Kôtton\",\r\n\"age\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Pet/updatePet/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Pet",
+						"updatePet",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete pet",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Pet/deletePet/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Pet",
+						"deletePet",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Pet/findPet/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Pet",
+						"findPet",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
